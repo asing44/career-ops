@@ -1,8 +1,36 @@
 {
   "name": "career-ops",
   "version": "1.22.0",
-  "description": "AI-powered job search pipeline — works with any AI coding CLI (Claude Code, OpenCode, Gemini, Codex, Qwen)",
   "private": true,
+  "description": "AI-powered job search pipeline — works with any AI coding CLI (Claude Code, OpenCode, Gemini, Codex, Qwen)",
+  "keywords": [
+    "ai",
+    "job-search",
+    "claude-code",
+    "opencode",
+    "career",
+    "career-ops",
+    "careerops",
+    "automation"
+  ],
+  "homepage": "https://santifer.io",
+  "bugs": {
+    "url": "https://github.com/santifer/career-ops/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santifer/career-ops.git"
+  },
+  "license": "MIT",
+  "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
   "scripts": {
     "doctor": "node doctor.mjs",
     "or": "node openrouter-runner.mjs",
@@ -53,27 +81,11 @@
     "postinstall": "npx playwright install chromium --with-deps || npx playwright install chromium --with-deps",
     "manifesto": "node manifesto.mjs"
   },
-  "keywords": [
-    "ai",
-    "job-search",
-    "claude-code",
-    "opencode",
-    "career",
-    "career-ops",
-    "careerops",
-    "automation"
-  ],
-  "author": "Santiago Fernández de Valderrama <hi@santifer.io> (https://santifer.io)",
-  "homepage": "https://santifer.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/santifer/career-ops"
-  },
-  "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.0.0",
     "js-yaml": "^4.1.1",
     "playwright": "1.61.1"
-  }
+  },
+  "devDependencies": {}
 }
