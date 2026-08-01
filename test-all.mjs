@@ -8047,8 +8047,11 @@ try {
 
   // No project MCP config → doctor surfaces a (non-fatal) warning instead of
   // letting SPA job boards fail silently.
+  // Pin the legacy fixture to Claude so the host CLI's runtime marker does not
+  // change which project config family the test exercises.
+  const doctorTestEnv = { ...process.env, CAREER_OPS_CLI: 'claude' };
   const noMcp = mkdtempSync(join(tmpdir(), 'co-nomcp-'));
-  const a = JSON.parse(run(NODE, ['doctor.mjs', '--json', '--target', noMcp]) || '{}');
+  const a = JSON.parse(run(NODE, ['doctor.mjs', '--json', '--target', noMcp], { env: doctorTestEnv }) || '{}');
   if (Array.isArray(a.warnings) && a.warnings.some((w) => /playwright mcp/i.test(w))) {
     pass('No Playwright MCP config → warning surfaced');
   } else {
@@ -8063,7 +8066,7 @@ try {
     join(withMcp, '.claude', 'settings.json'),
     JSON.stringify({ mcpServers: { playwright: { command: 'npx', args: ['@playwright/mcp', '--headless'] } } }),
   );
-  const b = JSON.parse(run(NODE, ['doctor.mjs', '--json', '--target', withMcp]) || '{}');
+  const b = JSON.parse(run(NODE, ['doctor.mjs', '--json', '--target', withMcp], { env: doctorTestEnv }) || '{}');
   if (Array.isArray(b.warnings) && !b.warnings.some((w) => /playwright mcp/i.test(w))) {
     pass('Playwright MCP configured → no warning');
   } else {
@@ -8078,7 +8081,7 @@ try {
     join(withLocalMcp, '.claude', 'settings.local.json'),
     JSON.stringify({ mcpServers: { browser: { command: 'npx', args: ['@playwright/mcp'] } } }),
   );
-  const c = JSON.parse(run(NODE, ['doctor.mjs', '--json', '--target', withLocalMcp]) || '{}');
+  const c = JSON.parse(run(NODE, ['doctor.mjs', '--json', '--target', withLocalMcp], { env: doctorTestEnv }) || '{}');
   if (Array.isArray(c.warnings) && !c.warnings.some((w) => /playwright mcp/i.test(w))) {
     pass('Playwright MCP configured via .claude/settings.local.json → no warning');
   } else {

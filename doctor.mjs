@@ -136,7 +136,7 @@ function isPlaywrightMcpConfigured(root, activeCli) {
 }
 
 // CLI resolution: --cli flag > $CAREER_OPS_CLI > .env (CAREER_OPS_CLI=...) >
-// default ('claude'). An unknown value at ANY level returns the sentinel
+// runtime marker > default ('claude'). An unknown value at ANY level returns the sentinel
 // 'unknown' and produces no output — CLI-dependent checks are silently
 // skipped. .env parsing is best-effort: missing file is normal, malformed
 // values are caught per call below.
@@ -162,6 +162,17 @@ function resolveActiveCli() {
     }
     return { cli: process.env.CAREER_OPS_CLI, source: '.env' };
   }
+
+  // Both supported interactive hosts expose a session marker to child
+  // processes. Prefer these over the legacy Claude fallback so doctor reports
+  // the CLI that actually invoked it when no explicit override is present.
+  if (process.env.OPENCODE === '1' || process.env.OPENCODE_PID) {
+    return { cli: 'opencode', source: 'runtime' };
+  }
+  if (process.env.CODEX_THREAD_ID || process.env.CODEX_CI) {
+    return { cli: 'codex', source: 'runtime' };
+  }
+
   return { cli: 'claude', source: 'default' };
 }
 

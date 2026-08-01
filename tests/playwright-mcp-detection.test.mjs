@@ -15,9 +15,13 @@ const DOCTOR = join(ROOT, 'doctor.mjs');
 
 function runDoctor(cwd, args, env) {
   try {
+    const childEnv = { ...process.env };
+    for (const key of ['OPENCODE', 'OPENCODE_PID', 'CODEX_THREAD_ID', 'CODEX_CI']) {
+      delete childEnv[key];
+    }
     const out = execFileSync(NODE, [DOCTOR, '--json', '--target', cwd, ...args], {
       cwd,
-      env: { ...process.env, ...env },
+      env: { ...childEnv, ...env },
       encoding: 'utf-8',
       stdio: ['ignore', 'pipe', 'pipe'],
     }).trim();
