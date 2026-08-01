@@ -1,0 +1,68 @@
+# Career-Ops Profile Configuration
+# User-owned source of truth. Compensation remains unset pending market research.
+
+candidate:
+  full_name: "Adam Warsing"
+  email: "adamjwarsing@gmail.com"
+  phone: "(412) 926-8464"
+  location: "Raleigh, NC"
+  linkedin: "https://linkedin.com/in/adam-j-warsing"
+  portfolio_url: "https://adam-warsing.webflow.io"
+  photo: ""
+  photo_style: rounded
+
+target_roles:
+  primary:
+    - "Frontend / Design-Facing Solutions Developer"
+    - "Solutions Developer with AI Integration"
+  archetypes:
+    - name: "Frontend / Design-Facing Solutions Developer"
+      level: "Open"
+      fit: "primary"
+    - name: "Solutions Developer with AI Integration"
+      level: "Open"
+      fit: "primary"
+    - name: "Frontend Developer"
+      level: "Open"
+      fit: "secondary"
+    - name: "Web / UX Developer"
+      level: "Open"
+      fit: "secondary"
+
+narrative:
+  headline: "Solutions Developer and Frontend Developer combining UI/UX, accessible interfaces, enterprise delivery, and AI-assisted workflows"
+  exit_story: "Building on frontend and UX delivery experience to pursue design-facing solutions work with meaningful AI integration."
+  superpowers:
+    - "Translating technical findings into clear, client-ready outcomes"
+    - "Accessible, responsive interface development"
+    - "Enterprise mobile EAM configuration and web-service integration"
+    - "AI-assisted analysis, documentation, and implementation planning"
+  proof_points:
+    - name: "Enterprise security-assignment analysis"
+      hero_metric: "Analyzed 49,000+ records and redirected the engagement toward evidence-based role design"
+    - name: "Responsive marketing-site delivery"
+      hero_metric: "Designed and launched 10+ Webflow and WordPress sites"
+    - name: "Client content workflow improvement"
+      hero_metric: "Reduced average content-update time by approximately 40% with custom PHP/ACF components"
+
+compensation:
+  target_range: ""
+  currency: "USD"
+  minimum: ""
+  location_flexibility: ""
+
+location:
+  country: "United States"
+  city: "Raleigh"
+  timezone: "America/New_York"
+
+language:
+  output: en
+
+spend_tier: standard
+
+cv:
+  output_format: "html"
+
+cover_letter:
+  primary_domain: "enterprise systems and frontend web development"
