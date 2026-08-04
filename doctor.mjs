@@ -12,6 +12,7 @@ import yaml from 'js-yaml';
 import dotenv from 'dotenv';
 import { discoverPlugins, pluginRoots, pluginStatus } from './plugins/_engine.mjs';
 import { resolveExtractorMode } from './browser-extract.mjs';
+import { parseConfigByExtension } from './jsonc-parse.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
@@ -108,7 +109,10 @@ async function checkPlaywright() {
 // Per-CLI MCP config registry.
 const MCP_CONFIGS = [
   { cli: 'claude',   files: ['.mcp.json', '.claude/settings.json', '.claude/settings.local.json'] },
-  { cli: 'opencode', files: ['opencode.json'] },
+  // opencode.jsonc is JSONC: OpenCode accepts comments and trailing commas
+  // there, and JSON.parse throwing on them used to read as "no MCP server
+  // configured" (#2252).
+  { cli: 'opencode', files: ['opencode.json', 'opencode.jsonc'] },
 ];
 
 // Server qualifies if its definition references the @playwright/mcp package.
@@ -125,7 +129,7 @@ function isPlaywrightMcpConfigured(root, activeCli) {
     const file = join(root, ...rel.split('/'));
     if (!existsSync(file)) return false;
     try {
-      const cfg = JSON.parse(readFileSync(file, 'utf8')) ?? {};
+      const cfg = parseConfigByExtension(file, readFileSync(file, 'utf8')) ?? {};
       const buckets = [cfg.mcpServers, cfg.mcp].filter((b) => b && typeof b === 'object');
       return buckets.some((servers) => Object.values(servers).some(isPlaywrightServer));
     } catch {
@@ -136,7 +140,7 @@ function isPlaywrightMcpConfigured(root, activeCli) {
 }
 
 // CLI resolution: --cli flag > $CAREER_OPS_CLI > .env (CAREER_OPS_CLI=...) >
-// runtime marker > default ('claude'). An unknown value at ANY level returns the sentinel
+// default ('claude'). An unknown value at ANY level returns the sentinel
 // 'unknown' and produces no output — CLI-dependent checks are silently
 // skipped. .env parsing is best-effort: missing file is normal, malformed
 // values are caught per call below.
@@ -162,17 +166,6 @@ function resolveActiveCli() {
     }
     return { cli: process.env.CAREER_OPS_CLI, source: '.env' };
   }
-
-  // Both supported interactive hosts expose a session marker to child
-  // processes. Prefer these over the legacy Claude fallback so doctor reports
-  // the CLI that actually invoked it when no explicit override is present.
-  if (process.env.OPENCODE === '1' || process.env.OPENCODE_PID) {
-    return { cli: 'opencode', source: 'runtime' };
-  }
-  if (process.env.CODEX_THREAD_ID || process.env.CODEX_CI) {
-    return { cli: 'codex', source: 'runtime' };
-  }
-
   return { cli: 'claude', source: 'default' };
 }
 

@@ -16,13 +16,9 @@ const DOCTOR = join(ROOT, 'doctor.mjs');
 
 function runDoctor(cwd, args, env) {
   try {
-    const childEnv = { ...process.env };
-    for (const key of ['OPENCODE', 'OPENCODE_PID', 'CODEX_THREAD_ID', 'CODEX_CI']) {
-      delete childEnv[key];
-    }
     const out = execFileSync(NODE, [DOCTOR, '--json', '--target', cwd, ...args], {
       cwd,
-      env: { ...childEnv, ...env },
+      env: { ...process.env, ...env },
       encoding: 'utf-8',
       stdio: ['ignore', 'pipe', 'pipe'],
     }).trim();
@@ -67,36 +63,6 @@ try {
         pass('process.env CAREER_OPS_CLI beats .env file (active_cli=opencode, cli_source=env)');
       } else {
         fail(`#2 unexpected state: ${JSON.stringify(state)}`);
-      }
-    } finally { rmSync(dir, { recursive: true, force: true }); }
-  }
-
-  // 3. Host runtime markers identify the current CLI when no explicit
-  // CAREER_OPS_CLI override is present.
-  {
-    const dir = mkdtempSync(join(tmpdir(), 'co-resolve-3-'));
-    try {
-      const state = runDoctor(dir, [], { OPENCODE: '1', OPENCODE_PID: '12345' });
-      if (expectOk(state, '#3 OpenCode runtime marker')
-          && state.active_cli === 'opencode'
-          && state.cli_source === 'runtime') {
-        pass('OpenCode runtime markers resolve active_cli=opencode');
-      } else {
-        fail(`#3 unexpected state: ${JSON.stringify(state)}`);
-      }
-    } finally { rmSync(dir, { recursive: true, force: true }); }
-  }
-
-  {
-    const dir = mkdtempSync(join(tmpdir(), 'co-resolve-4-'));
-    try {
-      const state = runDoctor(dir, [], { CODEX_THREAD_ID: 'thread-123' });
-      if (expectOk(state, '#4 Codex runtime marker')
-          && state.active_cli === 'codex'
-          && state.cli_source === 'runtime') {
-        pass('Codex runtime marker resolves active_cli=codex');
-      } else {
-        fail(`#4 unexpected state: ${JSON.stringify(state)}`);
       }
     } finally { rmSync(dir, { recursive: true, force: true }); }
   }
