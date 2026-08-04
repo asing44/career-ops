@@ -54,6 +54,8 @@ Use the candidate's exit story from `config/profile.yml` to frame ALL content:
 
 Frame the profile as a **design-aware technical builder who makes complex systems usable**. Emphasize frontend craft for interface-heavy roles and enterprise analysis/integration for solutions roles. Mention AI only at the level supported by `cv.md`; do not reframe AI-assisted workflows as authored AI products or production ML systems.
 
+**Note:** React is foundational/learning level (cv.md). Roles requiring "strong" or "senior-level" React/TypeScript frontend engineering are not a fit. Target roles that value frontend *sensibility* and *integration* over deep React expertise — solutions engineering, UI/UX integration, web development with Webflow/WordPress, and enterprise tooling.
+
 ## Your Portfolio / Demo
 
 <!-- If you have a live demo, dashboard, or public project:

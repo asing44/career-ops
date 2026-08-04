@@ -73,4 +73,3 @@ culture_screen:
   require:
     - "Small, flat teams (under 15 engineers)"
     - "Async-first communication, low meeting overhead"
-  deprioritize_if_absent: true
