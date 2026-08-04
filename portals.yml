@@ -1040,9 +1040,9 @@ tracked_companies:
     enabled: true
 
   - name: Temporal
-    careers_url: https://job-boards.greenhouse.io/temporal
-    api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
-    notes: "Workflow orchestration."
+    careers_url: https://job-boards.greenhouse.io/temporaltechnologies
+    api: https://boards-api.greenhouse.io/v1/boards/temporaltechnologies/jobs
+    notes: "Workflow orchestration. Moved from greenhouse.io/temporal to greenhouse.io/temporaltechnologies."
     enabled: true
 
   - name: Arize AI
@@ -1052,9 +1052,8 @@ tracked_companies:
     enabled: true
 
   - name: RunPod
-    careers_url: https://job-boards.greenhouse.io/runpod
-    api: https://boards-api.greenhouse.io/v1/boards/runpod/jobs
-    notes: "GPU cloud for AI."
+    careers_url: https://jobs.ashbyhq.com/runpod
+    notes: "GPU cloud for AI. Migrated from Greenhouse to Ashby."
     enabled: true
 
   - name: Weights & Biases (CoreWeave)
@@ -1072,10 +1071,10 @@ tracked_companies:
   # -- Contact Center AI & CX --
 
   - name: Ada
-    careers_url: https://job-boards.greenhouse.io/ada
+    careers_url: https://ada.cx/careers
     scan_method: websearch
-    scan_query: '"ada.cx" OR "ada" "AI" "Solutions" OR "Engineer" site:jobs.ashbyhq.com OR site:job-boards.greenhouse.io'
-    notes: "Toronto + remote. AI customer service."
+    scan_query: '"ada.cx" OR "ada" "AI" "Solutions" OR "Engineer" site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com'
+    notes: "Toronto + remote. AI customer service. Careers page behind 403 wall; WebSearch only."
     enabled: true
 
   - name: LivePerson
@@ -1153,10 +1152,9 @@ tracked_companies:
     enabled: true
 
   - name: Lindy
-    careers_url: https://jobs.ashbyhq.com/lindy
-    scan_method: websearch
-    scan_query: '"lindy.ai" "AI" "Forward Deployed" OR "Solutions" site:jobs.ashbyhq.com'
-    notes: "AI agent management platform."
+    careers_url: https://careers.lindy.ai/jobs
+    provider: teamtailor
+    notes: "SF. AI agent management platform. Migrated from Ashby to Teamtailor."
     enabled: true
 
   - name: Cognigy
@@ -1275,10 +1273,10 @@ tracked_companies:
   # -- European tech (EMEA-friendly) --
 
   - name: Factorial
-    careers_url: https://job-boards.greenhouse.io/factorial
+    careers_url: https://careers.factorialhr.com
     scan_method: websearch
-    scan_query: 'site:jobs.greenhouse.io/factorial'
-    notes: "Barcelona. HR SaaS unicorn."
+    scan_query: 'site:careers.factorialhr.com "Solutions" OR "Engineer" OR "Developer"'
+    notes: "Barcelona. HR SaaS unicorn. Uses own HR platform (factorialhr.com)."
     enabled: true
 
   - name: Attio
@@ -1289,24 +1287,19 @@ tracked_companies:
     enabled: true
 
   - name: Tinybird
-    careers_url: https://jobs.ashbyhq.com/tinybird
-    scan_method: websearch
-    scan_query: 'site:tinybird.co/careers OR site:jobs.ashbyhq.com/tinybird'
-    notes: "Remote. Real-time data platform."
+    careers_url: https://jobs.lever.co/tinybird
+    notes: "Remote. Real-time data platform. Migrated from Ashby to Lever."
     enabled: true
 
   - name: Clarity AI
-    careers_url: https://jobs.lever.co/clarity-ai
-    scan_method: websearch
-    scan_query: 'site:clarity.ai/careers OR site:jobs.lever.co/clarity-ai'
-    notes: "Madrid/Remote. Sustainability analytics with AI."
+    careers_url: https://job-boards.eu.greenhouse.io/clarityai
+    api: https://boards-api.eu.greenhouse.io/v1/boards/clarityai/jobs
+    notes: "Madrid/Remote. Sustainability analytics with AI. Migrated from Lever to Greenhouse EU."
     enabled: true
 
-  - name: Travelperk
-    careers_url: https://jobs.ashbyhq.com/travelperk
-    scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/travelperk'
-    notes: "Barcelona. Business travel unicorn."
+  - name: Perk (formerly Travelperk)
+    careers_url: https://jobs.ashbyhq.com/perk
+    notes: "Barcelona. Business travel unicorn. Rebranded from Travelperk to Perk; Ashby slug changed to perk."
     enabled: true
 
   # -- DACH & European AI ecosystem --
@@ -1397,8 +1390,8 @@ tracked_companies:
   # -- DACH logistics / mobility --
 
   - name: Forto
-    careers_url: https://jobs.lever.co/forto
-    notes: "Berlin DE. Digital freight forwarder, product & data roles, German + English."
+    careers_url: https://jobs.ashbyhq.com/forto
+    notes: "Berlin DE. Digital freight forwarder, product & data roles, German + English. Migrated from Lever to Ashby."
     enabled: true
 
   # -- Switzerland / Austria AI --
@@ -1518,8 +1511,10 @@ tracked_companies:
     enabled: true
 
   - name: Vinted
-    careers_url: https://jobs.lever.co/vinted
-    notes: "Vilnius LT / Berlin. C2C marketplace unicorn, data science & ML roles."
+    careers_url: https://careers.vinted.com/jobs
+    scan_method: websearch
+    scan_query: 'site:careers.vinted.com "Engineer" OR "Developer" OR "Solutions"'
+    notes: "Vilnius LT / Berlin. C2C marketplace unicorn, data science & ML roles. Uses custom ATS."
     enabled: true
 
   # -- Denmark AI / tech --
@@ -1539,9 +1534,8 @@ tracked_companies:
     enabled: true
 
   - name: Templafy
-    careers_url: https://job-boards.greenhouse.io/templafy
-    api: https://boards-api.greenhouse.io/v1/boards/templafy/jobs
-    notes: "Copenhagen DK. Document-generation / content-enablement platform."
+    careers_url: https://templafy.teamtailor.com
+    notes: "Copenhagen DK. Document-generation / content-enablement platform. Migrated from Greenhouse to Teamtailor."
     enabled: true
 
   # -- Iberia AI --
@@ -1569,9 +1563,10 @@ tracked_companies:
     enabled: true
 
   - name: Runway
-    careers_url: https://job-boards.greenhouse.io/runwayml
-    api: https://boards-api.greenhouse.io/v1/boards/runwayml/jobs
-    notes: "Generative AI video and creative tooling platform."
+    careers_url: https://jobs.ashbyhq.com/runway-ml
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/runway-ml'
+    notes: "Generative AI video and creative tooling platform. Migrated from Greenhouse to Ashby."
     enabled: true
 
   - name: Hightouch
