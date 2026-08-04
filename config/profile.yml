@@ -25,9 +25,6 @@ target_roles:
     - name: "Frontend Developer"
       level: "Open"
       fit: "secondary"
-    - name: "Web / UX Developer"
-      level: "Open"
-      fit: "secondary"
 
 narrative:
   headline: "Solutions Developer and Frontend Developer combining UI/UX, accessible interfaces, enterprise delivery, and AI-assisted workflows"
@@ -46,9 +43,9 @@ narrative:
       hero_metric: "Reduced average content-update time by approximately 40% with custom PHP/ACF components"
 
 compensation:
-  target_range: ""
+  target_range: "$60,000 - $80,000"
   currency: "USD"
-  minimum: ""
+  minimum: 60000
   location_flexibility: ""
 
 location:

@@ -24,7 +24,6 @@
 | **Frontend / Design-Facing Solutions Developer** | UI/UX, accessibility, responsive interfaces, enterprise delivery | Someone who can turn complex requirements into polished, usable solutions |
 | **Solutions Developer with AI Integration** | Enterprise systems, integrations, AI-assisted analysis, implementation planning | Someone who can apply AI practically inside client and legacy-system workflows |
 | **Frontend Developer** | JavaScript, responsive UI, Webflow/WordPress, performance | Someone who delivers accessible, performant web experiences |
-| **Web / UX Developer** | Visual storytelling, interaction design, usability, content systems | Someone who bridges design intent and maintainable implementation |
 
 ## Your Adaptive Framing
 
@@ -37,7 +36,6 @@
 | Frontend / design-facing solutions | Accessible UI, responsive implementation, visual quality, client-ready delivery | cv.md |
 | AI-integrated solutions | AI-assisted analysis, documentation workflows, enterprise integration, clear technical findings | cv.md |
 | Frontend development | JavaScript, Webflow/WordPress, Core Web Vitals, WCAG, reusable components | cv.md |
-| Web / UX development | User-centered design, interaction work, visual storytelling, maintainable content systems | cv.md |
 
 ## Your Exit Narrative
 
