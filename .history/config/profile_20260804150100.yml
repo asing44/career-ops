@@ -1,0 +1,85 @@
+# Career-Ops Profile Configuration
+# User-owned source of truth. Compensation remains unset pending market research.
+
+candidate:
+  full_name: "Adam Warsing"
+  email: "adamjwarsing@gmail.com"
+  phone: "(412) 926-8464"
+  location: "Raleigh, NC"
+  linkedin: "https://linkedin.com/in/adam-j-warsing"
+  portfolio_url: "https://adam-warsing.webflow.io"
+  photo: ""
+  photo_style: rounded
+
+target_roles:
+  primary:
+    - "Frontend / Design-Facing Solutions Developer"
+    - "Solutions Developer with AI Integration"
+  archetypes:
+    - name: "Frontend / Design-Facing Solutions Developer"
+      level: "Mid"
+      fit: "primary"
+    - name: "Solutions Developer with AI Integration"
+      level: "Mid"
+      fit: "primary"
+    - name: "Frontend Developer"
+      level: "Mid"
+      fit: "secondary"
+<<<<<<< HEAD
+=======
+    - name: "Web / UX Developer"
+      level: "Mid"
+      fit: "secondary"
+>>>>>>> 68c227bbee19e45968973168a3cea93f9d8f5f63
+
+narrative:
+  headline: "Solutions Developer and Frontend Developer combining UI/UX, accessible interfaces, enterprise delivery, and AI-assisted workflows"
+  exit_story: "Building on frontend and UX delivery experience to pursue design-facing solutions work with meaningful AI integration."
+  superpowers:
+    - "Translating technical findings into clear, client-ready outcomes"
+    - "Accessible, responsive interface development"
+    - "Enterprise mobile EAM configuration and web-service integration"
+    - "AI-assisted analysis, documentation, and implementation planning"
+  proof_points:
+    - name: "Enterprise security-assignment analysis"
+      hero_metric: "Analyzed 49,000+ records and redirected the engagement toward evidence-based role design"
+    - name: "Responsive marketing-site delivery"
+      hero_metric: "Designed and launched 10+ Webflow and WordPress sites"
+    - name: "Client content workflow improvement"
+      hero_metric: "Reduced average content-update time by approximately 40% with custom PHP/ACF components"
+
+compensation:
+<<<<<<< HEAD
+  target_range: "$60,000 - $80,000"
+  currency: "USD"
+  minimum: 60000
+  location_flexibility: ""
+=======
+  target_range: "$60k-$85k"
+  currency: "USD"
+  minimum: "$60k"
+  location_flexibility: "Remote preferred, in person MUST be in Raleigh, NC area"
+>>>>>>> 68c227bbee19e45968973168a3cea93f9d8f5f63
+
+location:
+  country: "United States"
+  city: "Raleigh"
+  timezone: "America/New_York"
+
+language:
+  output: en
+
+spend_tier: standard
+
+auto_pdf_score_threshold: 4.0
+
+cv:
+  output_format: "html"
+
+cover_letter:
+  primary_domain: "enterprise systems and frontend web development"
+
+culture_screen:
+  require:
+    - "Small, flat teams (under 15 engineers)"
+    - "Async-first communication, low meeting overhead"

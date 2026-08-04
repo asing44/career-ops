@@ -152,6 +152,12 @@
 2026-07-30T22:32:13.561823+00:00	https://cerence.wd5.myworkdayjobs.com/cerence/job/Remote---USA/Senior-Application-Developer---Industrial-Voice-AI---Edge-Applications_R0006014	pre-screen mismatch: industrial/edge/mobile voice AI for frontline factory workers; Android/iOS/rugged HMIs and STT/TTS/NLU SDK integration are outside supported experience
 2026-07-30T22:32:13.561823+00:00	https://careers-ice.icims.com/jobs/12854/senior-implementation-consultant---automated-underwriting-closing/job	pre-screen mismatch: mortgage underwriting domain requires 3+ years senior underwriter/processor/QC analyst experience that the CV does not support
 2026-07-30T22:32:13.561823+00:00	https://careers-ice.icims.com/jobs/13427/senior-implementation-technical-consultant  -pso/job	pre-screen mismatch: ICE Mortgage Technology implementation requires mortgage industry experience which is outside supported experience
+<<<<<<< HEAD
+2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/8051243	pre-screen mismatch: requires 3+ years pre-sales/consulting role and hands-on AI agent/LLM deployment experience
+2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/7785778	pre-screen mismatch: senior SE role requiring 5+ years enterprise SE or CCaaS experience
+2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/7792237	pre-screen mismatch: requires 5+ years as Solutions Engineer in software/VOIP/contact center
+2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/7954269	pre-screen mismatch: requires 5+ years PS/Consulting and 3+ years Epic integration experience
+=======
 2026-08-01T02:33:23.026Z	https://pureinsurance.wd5.myworkdayjobs.com/pure/job/Remote---US/Director--AI-Solutions-Engineer_R2710	Production AI/ML pipelines, RAG, inference, Python, Databricks, and Director-level scope exceed the CV.
 2026-08-01T02:33:23.026Z	https://gartner.wd5.myworkdayjobs.com/ext/job/Remote---Texas/Sr-Director--Analyst-AI-Integration---API-Management-_108568	Requires 10+ years of integration/API/AI-orchestration expertise plus analyst and client-advisory depth; materially senior.
 2026-08-01T02:33:23.026Z	https://abbott.wd5.myworkdayjobs.com/abbottcareers/job/United-States---Wisconsin---Madison/Sr-AI-Integration-Analyst_35000098-1	Madison-based; requires 5+ years integrations, interface-engine expertise, Python, and healthcare standards absent from the CV.
@@ -199,7 +205,4 @@
 2026-08-01T02:33:23.026Z	https://gdit.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Senior-Developer--Front-End-_RQ222446	Remote, but requires 7+ years React/UX, dynamic forms, cloud architecture, and technical leadership.
 2026-08-01T02:33:23.026Z	https://gdit.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Power-Platform-Application-Developer_RQ224936-1	Remote US, but requires 10+ years, Power Platform expertise, certification, C#, and team leadership.
 2026-08-01T02:33:23.026Z	https://job-boards.greenhouse.io/verkada/jobs/5195281007	San Mateo requires five days onsite; React role also exceeds documented frontend depth.
-2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/8051243	pre-screen mismatch: requires 3+ years pre-sales/consulting role and hands-on AI agent/LLM deployment experience
-2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/7785778	pre-screen mismatch: senior SE role requiring 5+ years enterprise SE or CCaaS experience
-2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/7792237	pre-screen mismatch: requires 5+ years as Solutions Engineer in software/VOIP/contact center
-2026-08-02T21:29:38Z	https://job-boards.greenhouse.io/talkdesk2/jobs/7954269	pre-screen mismatch: requires 5+ years PS/Consulting and 3+ years Epic integration experience
+>>>>>>> 68c227bbee19e45968973168a3cea93f9d8f5f63

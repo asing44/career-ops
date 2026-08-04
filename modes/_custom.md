@@ -30,7 +30,10 @@
      - Cap each batch run at 20 listings unless I say otherwise.
      - If a report scores below 6, skip the cover letter. -->
 
-(none yet -- add yours above)
+- If a report scores ≥ 3.5/5 and has no dealbreaker tags (on-site 5 days, below min comp, relocation required), auto-generate the PDF and cover letter, then prompt me to apply.
+- Aim for at least 1 application per week — nudge me if none have gone out in 7 days.
+- **Auto-reject any role scored under 3.0/5** — mark as Discarded with reason `score_below_3`.
+- **Location rule:** Remote preferred. If hybrid/onsite, the office MUST be in Raleigh, NC. Any other hybrid/onsite location is auto-rejected with reason `location_mismatch`.
 
 ## Custom Workflows
 

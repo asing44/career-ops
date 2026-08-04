@@ -1102,9 +1102,8 @@ tracked_companies:
 
   - name: Talkdesk
     careers_url: https://www.talkdesk.com/careers
-    scan_method: websearch
-    scan_query: 'site:talkdesk.com/careers "AI" OR "Solutions Architect" OR "AI Engineer"'
-    notes: "Lisbon. Contact center AI. EMEA friendly."
+    api: https://boards-api.greenhouse.io/v1/boards/talkdesk2/jobs
+    notes: "Lisbon. Contact center AI. EMEA friendly. Greenhouse board slug 'talkdesk2'."
     enabled: true
 
   - name: Twilio
@@ -1905,3 +1904,14 @@ job_boards:
   #   provider: higheredjobs
   #   cat_id: 68
   #   enabled: true
+
+  # ── a16z Speedrun Talent Network ─────────────────────────────────
+  # Covers open roles across ~200 a16z portfolio startups.
+  # q = server-side full-text search; adjust to your target keywords.
+  #   max_pages: 3  # optional page cap (50 jobs/page, default 3)
+
+  - name: a16z speedrun talent network
+    provider: a16z-speedrun-talent
+    max_pages: 3
+    q: frontend solutions engineer web developer
+    enabled: true
