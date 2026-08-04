@@ -17,13 +17,16 @@ target_roles:
     - "Solutions Developer with AI Integration"
   archetypes:
     - name: "Frontend / Design-Facing Solutions Developer"
-      level: "Open"
+      level: "Mid"
       fit: "primary"
     - name: "Solutions Developer with AI Integration"
-      level: "Open"
+      level: "Mid"
       fit: "primary"
     - name: "Frontend Developer"
-      level: "Open"
+      level: "Mid"
+      fit: "secondary"
+    - name: "Web / UX Developer"
+      level: "Mid"
       fit: "secondary"
 
 narrative:
@@ -43,10 +46,10 @@ narrative:
       hero_metric: "Reduced average content-update time by approximately 40% with custom PHP/ACF components"
 
 compensation:
-  target_range: "$60,000 - $80,000"
+  target_range: "$60k-$85k"
   currency: "USD"
-  minimum: 60000
-  location_flexibility: ""
+  minimum: "$60k"
+  location_flexibility: "Remote preferred, in person MUST be in Raleigh, NC area"
 
 location:
   country: "United States"
@@ -58,8 +61,15 @@ language:
 
 spend_tier: standard
 
+auto_pdf_score_threshold: 4.0
+
 cv:
   output_format: "html"
 
 cover_letter:
   primary_domain: "enterprise systems and frontend web development"
+
+culture_screen:
+  require:
+    - "Small, flat teams (under 15 engineers)"
+    - "Async-first communication, low meeting overhead"
