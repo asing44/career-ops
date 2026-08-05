@@ -22,12 +22,6 @@ import { normalizeTextKey } from './tracker-parse.mjs';
 export const OWNERLESS_GRACE_MS = 1_000;
 
 /**
- * Minimum age before directory age alone may condemn an ownerless lock or
- * recover guard. See `lockCanRecover` for why the age check needs a floor.
- */
-export const OWNERLESS_GRACE_MS = 1_000;
-
-/**
  * Rebuild a markdown table row from the cells produced by `line.split('|')`.
  *
  * `split('|')` yields a leading empty element (before the opening `|`) and,
