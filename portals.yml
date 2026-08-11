@@ -235,8 +235,7 @@ tracked_companies:
   # -- Webflow ecosystem --
   - name: Webflow
     careers_url: https://webflow.com/jobs
-    scan_method: websearch
-    scan_query: 'site:webflow.com/jobs OR site:boards.greenhouse.io/webflow'
+    api: https://boards-api.greenhouse.io/v1/boards/webflow/jobs
     notes: "Webflow platform itself. Frontend, solutions, support."
     enabled: true
 
@@ -272,7 +271,7 @@ tracked_companies:
   # -- Enterprise platforms (implementation/solutions) --
   - name: HubSpot
     careers_url: https://www.hubspot.com/careers
-    api: https://boards-api.greenhouse.io/v1/boards/hubspot2/jobs
+    api: https://boards-api.greenhouse.io/v1/boards/hubspot/jobs
     notes: "CRM platform. Solutions consultant, implementation, frontend roles."
     enabled: true
 
@@ -304,18 +303,18 @@ tracked_companies:
     enabled: true
 
   - name: 10up
-    careers_url: https://10up.com/careers
+    careers_url: https://fueled.com/careers
     scan_method: websearch
-    scan_query: '"10up" careers "engineer" OR "developer" OR "frontend"'
-    notes: "WordPress agency. Remote-first, mid-level friendly."
+    scan_query: '"fueled" careers "engineer" OR "developer" OR "frontend"'
+    notes: "WordPress agency (rebranded to Fueled, 2025). Remote-first, mid-level friendly."
     enabled: true
 
   - name: Youghal Digital
     careers_url: https://youghaldigital.com/careers
     scan_method: websearch
     scan_query: '"youghal digital" careers OR jobs'
-    notes: "Webflow agency. Client-facing frontend."
-    enabled: true
+    notes: "Webflow agency. Client-facing frontend. Domain does not resolve (2026-08) — disabled pending rebrand/reappearance."
+    enabled: false
 
   # -- No-code / low-code platforms --
   - name: Zapier
@@ -330,8 +329,7 @@ tracked_companies:
 
   - name: Make (Celonis)
     careers_url: https://www.make.com/en/careers
-    scan_method: websearch
-    scan_query: 'site:make.com/en/careers OR "make.com" "engineer" OR "solutions" OR "frontend"'
+    api: https://boards-api.greenhouse.io/v1/boards/make/jobs
     notes: "Automation platform. Implementation, frontend."
     enabled: true
 
@@ -352,15 +350,13 @@ tracked_companies:
   # -- Triangle / NC companies --
   - name: Pendo
     careers_url: https://www.pendo.io/careers
-    scan_method: websearch
-    scan_query: 'site:pendo.io/careers OR "pendo" "engineer" OR "developer" OR "solutions" site:boards.greenhouse.io'
+    api: https://boards-api.greenhouse.io/v1/boards/pendo/jobs
     notes: "Raleigh-founded. Product analytics. Solutions, frontend."
     enabled: true
 
   - name: Bandwidth
     careers_url: https://www.bandwidth.com/careers
-    scan_method: websearch
-    scan_query: 'site:bandwidth.com/careers "developer" OR "engineer" OR "frontend" OR "solutions"'
+    api: https://boards-api.greenhouse.io/v1/boards/bandwidth/jobs
     notes: "Raleigh-based. Communications platform. Frontend, solutions."
     enabled: true
 
