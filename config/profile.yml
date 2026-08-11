@@ -13,9 +13,13 @@ candidate:
 
 target_roles:
   primary:
+    - "Implementation / Delivery Consultant"
     - "Frontend / Design-Facing Solutions Developer"
     - "Solutions Developer with AI Integration"
   archetypes:
+    - name: "Implementation / Delivery Consultant"
+      level: "Mid"
+      fit: "primary"
     - name: "Frontend / Design-Facing Solutions Developer"
       level: "Mid"
       fit: "primary"
