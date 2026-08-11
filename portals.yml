@@ -272,7 +272,7 @@ tracked_companies:
   # -- Enterprise platforms (implementation/solutions) --
   - name: HubSpot
     careers_url: https://www.hubspot.com/careers
-    api: https://boards-api.greenhouse.io/v1/boards/hubspot2/jobs
+    api: https://boards-api.greenhouse.io/v1/boards/hubspot/jobs
     notes: "CRM platform. Solutions consultant, implementation, frontend roles."
     enabled: true
 

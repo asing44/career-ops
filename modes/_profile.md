@@ -21,6 +21,7 @@
 
 | Archetype | Thematic axes | What they buy |
 |-----------|---------------|---------------|
+| **Implementation / Delivery Consultant** | Enterprise deployments, client onboarding, configuration, training, integration delivery | Someone who can take a product from signed deal to live customer — configure, train, support |
 | **Frontend / Design-Facing Solutions Developer** | UI/UX, accessibility, responsive interfaces, enterprise delivery | Someone who can turn complex requirements into polished, usable solutions |
 | **Solutions Developer with AI Integration** | Enterprise systems, integrations, AI-assisted analysis, implementation planning | Someone who can apply AI practically inside client and legacy-system workflows |
 | **Frontend Developer** | JavaScript, responsive UI, Webflow/WordPress, performance | Someone who delivers accessible, performant web experiences |
@@ -33,6 +34,7 @@
 
 | If the role is... | Emphasize about you... | Proof point sources |
 |-------------------|------------------------|---------------------|
+| Implementation / delivery consulting | Enterprise configuration, client onboarding, training delivery, clear technical communication | cv.md — EAM configuration, enterprise integration |
 | Frontend / design-facing solutions | Accessible UI, responsive implementation, visual quality, client-ready delivery | cv.md |
 | AI-integrated solutions | AI-assisted analysis, documentation workflows, enterprise integration, clear technical findings | cv.md |
 | Frontend development | JavaScript, Webflow/WordPress, Core Web Vitals, WCAG, reusable components | cv.md |
