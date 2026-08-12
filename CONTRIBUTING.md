@@ -98,6 +98,8 @@ career-ops reads job listings from public sources: ATSes, job boards, company ca
 
 5. **The aggregation layer belongs to the project.** A provider reads its own source. Cross-source aggregation, ranking, matching and the registry live in core and are never delegated to a source.
 
+To see how the rules have actually been applied, read the [Source Indexing Log](docs/SOURCE_INDEXING_LOG.md): one entry per listed source, with what was checked and how.
+
 To propose a source (yours or anyone's): [open a source proposal](https://github.com/santifer/career-ops/issues/new?template=source-proposal.yml) walking through these five rules. A direct PR with the provider is welcome too: the same five rules apply before merge. Operator declarations are verified out-of-band before listing — a contact reachable at the source's own domain, or equivalent proof of domain control. Operators proposing their own board are welcome — that's what rule-based gates are for.
 
 ## Guidelines
@@ -140,6 +142,14 @@ node test-all.mjs --only providers/themuse   # Run just one provider's test(s)
 **Adding a test for a new scanner provider:** add one file at
 `tests/providers/{name}.test.mjs` — it's auto-discovered (`tests/**/*.test.mjs`),
 no registration needed. Do not add a section to `test-all.mjs` for this.
+
+**Adding a test for the web app:** web suites live under `web/tests/`, mirroring
+the tested module's path below `web/src/` (`src/lib/clean-chips.mjs` →
+`tests/lib/clean-chips.test.mjs`), named `{module}.test.mjs`. `web/`'s own
+`npm test` glob-discovers them, so no registration is needed there either — but
+keep them out of `web/src/` (Next.js scans that tree) and write them as `.mjs`,
+since there is no TypeScript loader for `node --test`. `web/README.md` has the
+detail; `tests/web-test-layout.test.mjs` enforces it on every PR.
 
 **`--only` is a dev convenience, not a PR gate:** it runs *only* the discovered
 `tests/` files matching the given substring and skips every inline core
