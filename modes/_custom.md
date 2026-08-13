@@ -30,7 +30,7 @@
      - Cap each batch run at 20 listings unless I say otherwise.
      - If a report scores below 6, skip the cover letter. -->
 
-- Never auto-generate PDFs. Only generate on explicit request ("generate PDF", "create PDF", "pdf it").
+- Auto-generate PDFs for any role scoring 4.0/5 or higher (matches `auto_pdf_score_threshold` in config/profile.yml). Below 4.0, only generate on explicit request ("generate PDF", "create PDF", "pdf it").
 - Aim for at least 1 application per week — nudge me if none have gone out in 7 days.
 - **Auto-reject any role scored under 3.0/5** — mark as Discarded with reason `score_below_3`.
 - **Location rule:** Remote preferred. If hybrid/onsite, the office MUST be in Raleigh, NC. Any other hybrid/onsite location is auto-rejected with reason `location_mismatch`.

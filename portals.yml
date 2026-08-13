@@ -240,7 +240,7 @@ tracked_companies:
     enabled: true
 
   - name: Finsweet
-    careers_url: https://finsweet.com/careers
+    careers_url: https://finsweet.com/jobs/home
     scan_method: websearch
     scan_query: '"finsweet" careers OR jobs'
     notes: "Webflow development agency. Client-facing frontend."

@@ -54,6 +54,13 @@ Solutions Developer and Frontend Developer combining UI/UX design, accessible in
 - Produced motion graphics, animated visuals, and social media content supporting cohesive brand storytelling across campaigns.
 - Organized and maintained shared Creative Cloud and Figma asset libraries, improving cross-platform brand consistency and team collaboration speed.
 
+
+### Founder, Adam Warsing Prints
+
+*2021 - 2022*
+
+- Ran a Shopify ecommerce business selling personalized, on-demand printed items such as t-shirts and posters, handling product setup, order fulfillment, and customer support.
+
 ## Education
 
 
