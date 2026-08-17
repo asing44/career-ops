@@ -73,8 +73,6 @@ title_filter:
     # -- Entry-level & internship --
     - "Junior Developer"
     - "Jr Developer"
-    - "Happiness Engineer"
-    - "Support Engineer"
     - "Technical Account Manager"
     # -- AI integration (practical, not engineer-level) --
     - "AI Integration"
@@ -361,6 +359,7 @@ tracked_companies:
 
   - name: Red Hat
     careers_url: https://www.redhat.com/en/jobs
+    api: https://redhat.wd5.myworkdayjobs.com/en-US/jobs
     scan_method: websearch
     scan_query: 'site:redhat.com/en/jobs "frontend" OR "web" OR "solutions" OR "associate"'
     notes: "Raleigh-based. Open source. Web, frontend, associate roles."
@@ -368,6 +367,9 @@ tracked_companies:
 
   - name: IBM
     careers_url: https://www.ibm.com/careers
+    provider: ibm
+    ibm:
+      country: "United States"
     scan_method: websearch
     scan_query: 'site:ibm.com/careers "frontend" OR "web developer" OR "application developer" OR "solutions" Raleigh OR "Research Triangle"'
     notes: "RTP presence. Frontend, application developer, associate roles."
