@@ -75,6 +75,6 @@ cover_letter:
   primary_domain: "enterprise systems and frontend web development"
 
 culture_screen:
-  require:
-    - "Small, flat teams (under 15 engineers)"
+  prefer:
+    - "Less than 200 total employees"
     - "Async-first communication, low meeting overhead"
