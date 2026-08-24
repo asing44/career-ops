@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-US-NC/Security-Technical-Account-Manager_R-058231-1",
+  "action": "skip",
+  "reason": "seniority_mismatch + tech_stack_mismatch: Security TAM role requires 10+ years in a security/customer-support/dev/engineering/QA organization, RHCE certification (RHCA preferred) plus a security certification (CISSP/CCSP/Security+/CC/CEH), US Citizenship, and deep hands-on RHEL, Docker, Kubernetes, Ansible, CI/CD, and container-platform expertise in a strategic advisory capacity to senior IT executives. Candidate is a junior frontend/solutions developer (~1-2 years professional experience, B.S. Digital Multimedia and Design 2024) with no security role experience, no Red Hat certifications, no Linux/container/Kubernetes/Ansible skills, and no enterprise security advisory background. Remote-US-NC location and advertised comp ($107,980-$172,730) are favorable, but the experience, certification, and security-domain requirements are hard blockers with no adjacent path to bridge them.",
+  "report": null,
+  "company": "Red Hat",
+  "role": "Security Technical Account Manager",
+  "score": null,
+  "PDF": false,
+  "processed-line": "Red Hat | Security Technical Account Manager | skip | seniority_mismatch + tech_stack_mismatch",
+  "recommended-action": "Do not apply. Core requirements are 10+ years security/support/engineering experience, RHCE + security certifications, US Citizenship, and hands-on RHEL/Docker/Kubernetes/Ansible expertise in a senior advisory role. Candidate profile (junior frontend/solutions developer) meets none of these; score would fall well below the 3.0 auto-reject threshold (score_below_3)."
+}

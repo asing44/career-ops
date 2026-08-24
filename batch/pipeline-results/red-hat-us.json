@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-US-NC/Technical-Account-Manager_R-058538-1",
+  "action": "skip",
+  "reason": "tech_stack_mismatch",
+  "report": null,
+  "company": "Red Hat",
+  "role": "Technical Account Manager",
+  "score": null,
+  "PDF": false,
+  "processed-line": "Red Hat | Technical Account Manager | skip | tech_stack_mismatch",
+  "recommended-action": "Do not apply. Core requirement is an enterprise-level engineer with 5+ years in support/development/engineering/IT/QA and deep Red Hat Enterprise Linux expertise (installation, patch management, performance tuning, troubleshooting), plus configuration management, application deployment, and infrastructure orchestration. Candidate profile (frontend/solutions developer) has no Linux/RHEL, infrastructure, orchestration, or container experience and no adjacent path to bridge it. Remote-US-NC location and comp ($96,440-$154,190) are favorable, but the tech-stack and seniority mismatch is a hard blocker."
+}

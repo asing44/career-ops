@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-US-AL/Dedicated-Operations-Technical-Account-Manager----Secret-Clearance-Required_R-055546",
+  "action": "skip",
+  "reason": "pre-screen mismatch: Dedicated Operations TAM role requiring (1) an active Secret (or higher) US Government clearance, (2) 5+ years Linux sysadmin + 3+ years hands-on Red Hat OpenShift Day-2 administration (installation, patching, upgrades, air-gapped/disconnected environments), and (3) fully onsite daily presence at the customer's Huntsville, AL facility. Candidate has no security clearance, no Linux/OpenShift/Kubernetes/container experience (frontend/solutions developer), and the role is fully onsite in Huntsville, AL which violates the candidate's location rule (non-remote roles must be in Raleigh, NC). Obvious clearance, domain, seniority, and location mismatch with North Star archetypes.",
+  "report_number": null,
+  "company": "Red Hat",
+  "role": "Dedicated Operations Technical Account Manager - OpenShift (Secret Clearance Required)",
+  "score": null,
+  "pdf_status": "not_generated",
+  "processed_line": "- [ ] https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-US-AL/Dedicated-Operations-Technical-Account-Manager----Secret-Clearance-Required_R-055546 | Red Hat | Dedicated Operations Technical Account Manager - OpenShift (Secret Clearance Required) | Remote US AL | posted: 2026-08-03",
+  "recommended_action": "skip - do not apply; requires active Secret clearance, 3+ years OpenShift Day-2 ops, and fully onsite presence in Huntsville, AL - all hard blockers the candidate does not meet"
+}

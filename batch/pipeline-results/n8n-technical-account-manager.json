@@ -1,0 +1,12 @@
+{
+  "url": "https://jobs.ashbyhq.com/n8n/04d3fd30-8aef-4c25-bd56-2142b44f8224",
+  "action": "skip",
+  "reason": "pre-screen mismatch: senior Technical Account Manager role requiring strong DevOps/infrastructure expertise (Docker, Kubernetes, self-hosted deployments, cloud), production troubleshooting of performance/reliability/scalability, and technical account leadership. Candidate is a mid-level frontend/solutions developer with no Docker/Kubernetes/cloud-infrastructure/production-troubleshooting experience; React is foundational/learning level. Obvious domain and seniority mismatch with North Star archetypes (frontend/design-facing solutions, implementation/delivery consulting).",
+  "report_number": null,
+  "company": "n8n",
+  "role": "Technical Account Manager (Remote US)",
+  "score": null,
+  "pdf_status": "not_generated",
+  "processed_line": "- [ ] https://jobs.ashbyhq.com/n8n/04d3fd30-8aef-4c25-bd56-2142b44f8224 | n8n | Technical Account Manager (Remote US) | United States · California · Florida · New York · Massachusetts · Virginia · New Jersey · Texas | posted: 2026-08-19",
+  "recommended_action": "skip - do not apply; role requires senior DevOps/infrastructure and production-troubleshooting expertise the candidate does not have"
+}

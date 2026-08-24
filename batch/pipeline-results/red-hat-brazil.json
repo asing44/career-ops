@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-Brazil/OpenShift-Technical-Account-Manager_R-058182-1",
+  "action": "skip",
+  "report": null,
+  "company": "Red Hat",
+  "role": "OpenShift Technical Account Manager - Bahia",
+  "score": null,
+  "pdf": null,
+  "processed-line": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-Brazil/OpenShift-Technical-Account-Manager_R-058182-1",
+  "recommended-action": "skip",
+  "reason": "location_mismatch + tech_stack_mismatch + seniority_mismatch: role is Remote Brazil (requires Brazil work authorization and regional travel within Brazil; candidate is in Raleigh, NC, USA and cannot work from Brazil); role requires 5+ years of enterprise cloud platform engineering with deep OpenShift/Kubernetes/containers/DevOps/CI-CD expertise, which the candidate (frontend/solutions developer) does not have; seniority is a trusted-advisor enterprise platform role well above the candidate's mid-level profile."
+}

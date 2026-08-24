@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-France/Lightwell-Security-Technical-Account-Manager_R-058693-1",
+  "action": "skip",
+  "reason": "location_mismatch",
+  "report": null,
+  "company": "Red Hat",
+  "role": "Lightwell Security Technical Account Manager",
+  "score": null,
+  "PDF": false,
+  "processed-line": "Red Hat | Lightwell Security Technical Account Manager | skip | location_mismatch",
+  "recommended-action": "Do not apply. Role is based in Remote France / Puteaux and explicitly requires native French ('Executive presence and communication skills in English and French (native)'), while the candidate is US-based in Raleigh, NC — a hard location mismatch per house rules. Independent of location, the role is also a senior (10+ years) security Technical Account Manager advisory position requiring deep software supply chain, CI/CD, containerization (OpenShift/Kubernetes), and Java ecosystem expertise, which does not match the candidate's mid-level frontend/solutions developer profile. No adjacent path to bridge either gap."
+}

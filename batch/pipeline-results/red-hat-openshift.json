@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-US-MN/Technical-Account-Manager---Openshift_R-058177-1",
+  "action": "skip",
+  "reason": "tech_stack_mismatch",
+  "report": null,
+  "company": "Red Hat",
+  "role": "Technical Account Manager - Openshift",
+  "score": null,
+  "PDF": false,
+  "processed-line": "Red Hat | Technical Account Manager - Openshift | skip | tech_stack_mismatch",
+  "recommended-action": "Do not apply. Core requirements are 5+ years in technical support/devops/consulting/development/engineering/QA plus hands-on expertise with enterprise cloud solutions (Red Hat OpenShift, Kubernetes, Advanced Cluster Manager for Kubernetes, Ansible Automation Platform), VM migrations, and Telecommunications/Service Provider industry experience. Candidate profile (frontend/solutions developer, ~2 years professional) has no Kubernetes/OpenShift/container/cloud-infrastructure, automation, or telecom experience and no adjacent path to bridge it. Remote-US location and comp ($96,440-$154,190) are favorable, but the tech-stack and seniority mismatch is a hard blocker."
+}

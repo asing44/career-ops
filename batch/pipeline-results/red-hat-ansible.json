@@ -1,0 +1,12 @@
+{
+  "url": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Remote-US-NC/Technical-Account-Manager---Ansible_R-058670-2",
+  "action": "skip",
+  "reason": "tech_stack_mismatch",
+  "report": null,
+  "company": "Red Hat",
+  "role": "Technical Account Manager - Ansible",
+  "score": null,
+  "PDF": false,
+  "processed-line": "Red Hat | Technical Account Manager - Ansible | skip | tech_stack_mismatch",
+  "recommended-action": "Do not apply. Core requirement is enterprise-level Ansible Automation Platform / automation (Chef, Puppet, SaltStack), configuration management, and infrastructure orchestration expertise. Candidate profile (frontend/solutions developer) has no automation, Linux/RHEL, container, or Kubernetes experience and no adjacent path to bridge it. Remote-US location and comp ($96,440-$154,190) are favorable, but the tech-stack mismatch is a hard blocker."
+}
