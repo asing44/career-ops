@@ -1,0 +1,3 @@
+45. [GET] https://www.deptagency.com/wp-json/dept-gh/v1/fetch-vacancy-listing?rendered-output=true&page=1&include-statistics=true&lang=global => [200] 
+
+Note: 40 static requests not shown, run with "static" option to see them.
